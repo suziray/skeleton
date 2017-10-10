@@ -4,6 +4,7 @@
 package generated;
 
 
+import generated.tables.Images;
 import generated.tables.Receipts;
 import generated.tables.Tags;
 
@@ -32,4 +33,9 @@ public class Tables {
 	 * The table public.tags
 	 */
 	public static final Tags TAGS = generated.tables.Tags.TAGS;
+
+	/**
+	 * The table public.images
+	 */
+	public static final Images IMAGES = generated.tables.Images.IMAGES;
 }

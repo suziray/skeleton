@@ -35,7 +35,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Tags extends TableImpl<TagsRecord> {
 
-	private static final long serialVersionUID = -572264797;
+	private static final long serialVersionUID = -1495754007;
 
 	/**
 	 * The reference instance of <code>public.tags</code>
@@ -61,9 +61,9 @@ public class Tags extends TableImpl<TagsRecord> {
 	public final TableField<TagsRecord, Time> UPLOADED = createField("uploaded", org.jooq.impl.SQLDataType.TIME.defaulted(true), this, "");
 
 	/**
-	 * The column <code>public.tags.receiptid</code>.
+	 * The column <code>public.tags.rid</code>.
 	 */
-	public final TableField<TagsRecord, Integer> RECEIPTID = createField("receiptid", org.jooq.impl.SQLDataType.INTEGER.nullable(false), this, "");
+	public final TableField<TagsRecord, Integer> RID = createField("rid", org.jooq.impl.SQLDataType.INTEGER.nullable(false), this, "");
 
 	/**
 	 * The column <code>public.tags.tag</code>.

@@ -10,10 +10,10 @@ import java.math.BigDecimal;
  *
  * Fields can be annotated with Validation annotations - these will be applied by the
  * Server when transforming JSON requests into Java objects IFF you specify @Valid in the
- * endpoint.  See {@link controllers.TagController#createTag(CreateTagRequest)} for
+ * endpoint.  See {@link controllers.ImageController#createImage(CreateImageRequest)} for
  * and example.
  */
-public class CreateTagRequest {
+public class CreateImageRequest {
     @NotNull
     public int id;
 }

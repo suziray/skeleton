@@ -26,7 +26,8 @@ public class TagController {
     @PUT
     @Path("/{tag}")
     public void toggleTag(@PathParam("tag") String tagName, int id) {
-        tags.update(id, tagName);
+        //tagName
+        String result = tags.update(id, tagName);
     }
 
     @GET

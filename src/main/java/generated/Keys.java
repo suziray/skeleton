@@ -4,8 +4,10 @@
 package generated;
 
 
+import generated.tables.Images;
 import generated.tables.Receipts;
 import generated.tables.Tags;
+import generated.tables.records.ImagesRecord;
 import generated.tables.records.ReceiptsRecord;
 import generated.tables.records.TagsRecord;
 
@@ -36,6 +38,7 @@ public class Keys {
 
 	public static final Identity<ReceiptsRecord, Integer> IDENTITY_RECEIPTS = Identities0.IDENTITY_RECEIPTS;
 	public static final Identity<TagsRecord, Integer> IDENTITY_TAGS = Identities0.IDENTITY_TAGS;
+	public static final Identity<ImagesRecord, Integer> IDENTITY_IMAGES = Identities0.IDENTITY_IMAGES;
 
 	// -------------------------------------------------------------------------
 	// UNIQUE and PRIMARY KEY definitions
@@ -43,6 +46,7 @@ public class Keys {
 
 	public static final UniqueKey<ReceiptsRecord> CONSTRAINT_F = UniqueKeys0.CONSTRAINT_F;
 	public static final UniqueKey<TagsRecord> CONSTRAINT_2 = UniqueKeys0.CONSTRAINT_2;
+	public static final UniqueKey<ImagesRecord> CONSTRAINT_8 = UniqueKeys0.CONSTRAINT_8;
 
 	// -------------------------------------------------------------------------
 	// FOREIGN KEY definitions
@@ -56,10 +60,12 @@ public class Keys {
 	private static class Identities0 extends AbstractKeys {
 		public static Identity<ReceiptsRecord, Integer> IDENTITY_RECEIPTS = createIdentity(Receipts.RECEIPTS, Receipts.RECEIPTS.ID);
 		public static Identity<TagsRecord, Integer> IDENTITY_TAGS = createIdentity(Tags.TAGS, Tags.TAGS.ID);
+		public static Identity<ImagesRecord, Integer> IDENTITY_IMAGES = createIdentity(Images.IMAGES, Images.IMAGES.ID);
 	}
 
 	private static class UniqueKeys0 extends AbstractKeys {
 		public static final UniqueKey<ReceiptsRecord> CONSTRAINT_F = createUniqueKey(Receipts.RECEIPTS, Receipts.RECEIPTS.ID);
 		public static final UniqueKey<TagsRecord> CONSTRAINT_2 = createUniqueKey(Tags.TAGS, Tags.TAGS.ID);
+		public static final UniqueKey<ImagesRecord> CONSTRAINT_8 = createUniqueKey(Images.IMAGES, Images.IMAGES.ID);
 	}
 }
